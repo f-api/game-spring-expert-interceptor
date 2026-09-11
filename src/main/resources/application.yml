@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:h2:file:./data/interceptor-course}
+    username: ${DB_USERNAME:sa}
+    password: ${DB_PASSWORD:}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+  application:
+    name: game-spring-expert-interceptor
+
+server:
+  port: ${PORT:8080}
